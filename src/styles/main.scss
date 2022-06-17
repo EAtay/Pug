@@ -1,0 +1,112 @@
+#main {
+  padding: 94px 0;
+}
+
+.row-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url(../img/top-line.png) no-repeat;
+  background-position: left 222px top 0;
+  text-align: center;
+}
+
+.left-side {
+  padding: 44px 0;
+  display: flex;
+  color: #282c37;
+  align-items: center;
+  padding-right: 26px;
+  justify-content: center;
+  background: url(../img/bg-polygons.png) no-repeat;
+  background-position: left top 0px;
+}
+.main-container-text {
+  padding-top: 26px;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+}
+.main-title {
+  font-family: Montserrat;
+  font-weight: 700;
+  margin: 0;
+  font-size: 44px;
+  line-height: 54px;
+  text-transform: uppercase;
+  color: #282c37;
+}
+.main-context {
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  padding-top: 4px;
+  line-height: 37px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+.main-text {
+  margin-bottom: 40px;
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  width: 80%;
+  color: #282c37;
+}
+.main-discuss-btn {
+  font-family: "Montserrat";
+  height: 48px;
+  width: 264px;
+  border-radius: 8px;
+  background: #47cf34;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.right-side {
+  margin: 14px 0 0 60px;
+}
+.bg-img {
+  width: 100%;
+}
+
+.cube-img__logo {
+  width: 467.8px;
+  height: 452.99px;
+}
+.cube-web__line-bot {
+  position: absolute;
+  z-index: -1;
+}
+
+.row-container-faq {
+  margin-top: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.col-8{
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+}
+.col-6{
+  margin: 38px 0;
+}
+
+.faq__text {
+  font-family: "Lato";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  color: #282c37;
+  margin: 0;
+}

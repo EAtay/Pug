@@ -1,0 +1,73 @@
+nav {
+  height: 70px;
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+}
+.navbar-gap {
+  padding-left: 150px;
+  gap: 72px; 
+}
+
+.nav-link {
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+  color: #282c37;
+  font-size: 14px;
+  padding-top: 10px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0.03em;
+}
+.nav-link:hover {
+  font-weight: bold;
+  transition: 0.2s;
+}
+.social-item{
+  fill: #282C37;
+}
+.social-item:hover{
+  transition: 0.2s;
+  fill: green;
+}
+.social-blocks{
+  gap: 24px;
+}
+
+
+
+@media (min-width: 576px) {
+  .ru {
+    background: yellow;
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .ru {
+    background: green;
+    width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .ru {
+    background: rgb(33, 25, 25);
+    width: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .ru {
+    background: #fff;
+    width: 100%;
+  }
+}
+
+@media (min-width: 1400px) {
+  .ru {
+    background: blue;
+    width: 100%;
+  }
+}

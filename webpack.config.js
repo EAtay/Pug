@@ -1,137 +1,50 @@
-const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractWebpackPlugin = require("mini-css-extract-plugin");
-const CssMinimizerWebpackPlugin = require("css-minimizer-webpack-plugin");
-
-const CopyWebpackPlugin = require("copy-webpack-plugin");
-const {CleanWebpackPlugin} = require("clean-webpack-plugin");
-
-
-module.exports = (env, argv) => {
-    return (argv.mode === "production")
-        ? prodConfig
-        : devConfig;
-};
-
-const prodConfig =  {
-    mode: "production",
-    entry: "./src/index.js",
-    output: {
-        filename: "bundle.[contenthash].js",
-        path: path.resolve(__dirname, "./build")
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: "./src/index.pug",
-            inject: "body"
-        }),
-        new MiniCssExtractWebpackPlugin({
-            filename: "styles.[contenthash].css"
-        }),
-        // new CopyWebpackPlugin({
-        //     patterns: [
-        //         {
-        //             from: "./src/assets",
-        //             to: "./assets"
-        //         }
-        //     ]
-        // }),
-        new CleanWebpackPlugin()
-    ],
-    module: {
-        rules: [
-            {
-                test: /\.html$/i,
-                loader: "html-loader",
-                },{
-                    test: /\.pug$/,
-                    loader: 'pug-loader',
-                    exclude: /(node_modules|bower_components)/,
-                },
-            // {
-            //     test: /\.css$/,
-            //     use: [
-            //         MiniCssExtractWebpackPlugin.loader,
-            //         "css-loader"
-            //     ]
-            // },
-            {
-                test: /\.(s*)css$/,
-                use: [
-                    MiniCssExtractWebpackPlugin.loader,
-    
-                    'css-loader',
-                    'sass-loader'
-                ]
-            },
-        ]
-    },
-    optimization: {
-        minimizer: [
-            new CssMinimizerWebpackPlugin(),
-            "..."
-        ]
-    }
-};
-
-const devConfig = {
-    mode: "development",
-    devtool: "source-map",
-    entry: "./src/index.js",
-    output: {
-        filename: "index.js",
-        path: path.resolve(__dirname, "./build")
-    },
-    devServer: {
-        port: 7008,
-        static: "./build",
-        watchFiles: ["./src/index.pug"],
-        hot: true
-    },
-    plugins: [
-        new HtmlWebpackPlugin({
-            template: "./src/index.pug",
-            inject: "body"
-        }),
-        new MiniCssExtractWebpackPlugin({
-            filename: "styles.css"
-        }),
-        // new CopyWebpackPlugin({
-        //     patterns: [
-        //         {
-        //             from: "./src/assets",
-        //             to: "./assets"
-        //         }
-        //     ]
-        // }),
-        new CleanWebpackPlugin()
-    ],
-    module: {
-        rules: [
-            {
-                test: /\.html$/i,
-                loader: "html-loader",
-                },{
-                    test: /\.pug$/,
-                    loader: 'pug-loader',
-                    exclude: /(node_modules|bower_components)/,
-                },
-            // {
-            //     test: /\.css$/,
-            //     use: [
-            //         MiniCssExtractWebpackPlugin.loader,
-            //         "css-loader"
-            //     ]
-            // },
-            {
-                test: /\.(s*)css$/,
-                use: [
-                    MiniCssExtractWebpackPlugin.loader,
-    
-                    'css-loader',
-                    'sass-loader'
-                ]
-            },
-        ]
-    }
-};
+const path = require('path') 
+const HtmlWebpackPlugin = require('html-webpack-plugin') 
+const CopyWebpackPlugin = require('copy-webpack-plugin') 
+ 
+module.exports = { 
+  mode: 'development', 
+  entry: [ 
+    './src/index.pug', 
+    './src/index.js', 
+    './src/index.scss', 
+  ], 
+  output: { 
+    path: path.resolve(__dirname, 'dist'), 
+    filename: '[name].js', 
+    clean: true, 
+  }, 
+  devtool: 'source-map', 
+  devServer: { 
+    static: { 
+      directory: path.resolve(__dirname, 'dist'), 
+    }, 
+    port: 3000, 
+    open: true, 
+    hot: true, 
+    compress: true, 
+  }, 
+  module: { 
+    rules: [ 
+      { 
+        test: /.pug$/, 
+        use: ['pug-loader'], 
+      }, 
+      { 
+        test: /\.scss$/, 
+        use: ['style-loader', 'css-loader', 'sass-loader'], 
+      }, 
+      { 
+        test: /\.(png|svg|jpg|jpeg|gif|ttf)$/i, 
+        type: 'asset/resource', 
+      }, 
+    ], 
+  }, 
+  plugins: [ 
+    new HtmlWebpackPlugin({ 
+      title: 'Webpack App', 
+      filename: 'index.html', 
+      template: 'src/index.pug', 
+    }), 
+  ], 
+}
