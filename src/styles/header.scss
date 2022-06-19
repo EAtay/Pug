@@ -1,15 +1,28 @@
 nav {
   height: 70px;
   width: 100%;
-  box-shadow: 0 0 1px gray
+  box-shadow: 0 0 1px gray;
 }
 .container {
   max-width: 1200px;
 }
 .navbar-gap {
   padding-left: 150px;
-  gap: 72px; 
+  gap: 72px;
 }
+
+.burger__btn {
+  display: none;
+}
+
+.menu__icon {
+  display: none;
+}
+
+.logo__nav {
+  display: none;
+}
+
 
 .nav-link {
   font-family: "Lato", sans-serif;
@@ -25,18 +38,30 @@ nav {
   font-weight: bold;
   transition: 0.2s;
 }
-.social-item{
-  fill: #282C37;
+.social-item {
+  fill: #282c37;
 }
-.social-item:hover{
+.social-item:hover {
   transition: 0.2s;
   fill: green;
 }
-.social-blocks{
+.social-blocks {
   gap: 24px;
 }
-
-
+.navbar-toggler {
+  border: none;
+}
+.navbar-collapse {
+  align-items: center;
+  background: #fff;
+  z-index: 2;
+}
+.navbar {
+  --bs-navbar-toggler-border-color: none;
+  --bs-navbar-toggler-border-radius: 0;
+  --bs-navbar-toggler-focus-width: 0;
+  --bs-navbar-toggler-transition: none;
+}
 
 @media (min-width: 576px) {
   .ru {

@@ -46,5 +46,9 @@ module.exports = {
       filename: 'index.html', 
       template: 'src/index.pug', 
     }), 
+    new HTMLWebpackPlugin({
+      filename: 'service.html',
+      template: 'scr/pages/service.pug'
+    })
   ], 
 }
