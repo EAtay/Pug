@@ -45,6 +45,14 @@ module.exports = {
       title: 'Webpack App', 
       filename: 'index.html', 
       template: 'src/index.pug', 
-    }), 
+    }),
+    new CopyWebpackPlugin({ 
+      patterns: [ 
+        { 
+          from: './src/img', 
+          to: './img', 
+        }, 
+      ], 
+    }),
   ], 
 }

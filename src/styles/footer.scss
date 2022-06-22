@@ -2,15 +2,12 @@
   width: 100%;
   background: #3f4750;
 
-}
-
 .footer__container {
-  padding: 23.5px 134px;
+  padding: 20px 11px;
   display: flex;
   text-align: center;
   align-items: center;
 }
-
 .roots-footer {
   text-align: left;
 }
@@ -30,11 +27,11 @@
   list-style: none;
   gap: 24px;
 }
- 
 .social__footer-item{
   fill: #9FA7B0;
 }
 .social__footer-item:hover{
   transition: 0.2s;
   fill: green;
+}
 }
