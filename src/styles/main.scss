@@ -76,64 +76,12 @@
   position: absolute;
   top: 562px;
   left: 0;
-  background: url(../img/center-line.png);
+  background: url(../img/center-line.png) no-repeat;
   background-position: center;
 }
-.row-container-faq {
-  margin-top: 130px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.faq-string {
-  margin: 38px 0;
-}
-.faq-item {
-  display: flex;
-  margin: 0 auto;
-  text-align: center;
-  align-items: center;
-  justify-content: space-between;
-}
-.faq__text {
-  font-family: "Lato";
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 22px;
-  text-align: left;
-  margin: 0;
-}
-.faq__svg {
-  width: 10%;
-}
-.col-9 a {
-  color: #282c37;
-  text-decoration: none;
-}
-.col-9 a:hover {
-  color: #5391dc;
-  transition: 0.2s;
-  text-decoration: underline;
-}
-.bottom-line {
-  height: 168px;
-  width: 100%;
-  position: absolute;
-  top: 998px;
-  left: 0;
-  background: url(../img/bottom-line.png) no-repeat;
-  background-position: center;
-}
-
 @media (max-width: 1200px) {
   .cube-container {
     padding-left: 22px;
-  }
-}
-@media (max-width: 1061px) {
-  .bottom-line {
-    top: 1028px;
   }
 }
 @media (max-width: 992px) {
@@ -150,11 +98,7 @@
     background-position: center;
     top: 370px;
   }
-  .bottom-line {
-    top: 759px;
-    background: url(../img/bottom-line-ipad.png) no-repeat;
-    background-position: center;
-  }
+
   .left-content {
     margin-top: 0;
   }
@@ -184,18 +128,6 @@
     margin-bottom: 14px;
     line-height: 17px;
   }
-  .row-container-faq {
-    margin-top: 60px;
-  }
-  .service__blocks {
-    background: red;
-    padding: 0 15px;
-  }
-}
-@media (max-width: 840px) {
-  .bottom-line {
-    top: 810px;
-  }
 }
 @media (max-width: 768px) {
   #main {
@@ -212,9 +144,6 @@
     background: url(../img/arrows.png) no-repeat;
     background-position: center;
   }
-  .bottom-line {
-    background: none;
-  }
   .main-container-text {
     background: none;
     padding: 12px 0;
@@ -227,16 +156,6 @@
   }
   .main-text {
     margin-bottom: 14px;
-  }
-  .row-container-faq {
-    margin-top: 120px;
-  }
-  .col-6 {
-    width: 100%;
-    margin: 40px 0 0;
-  }
-  .section__title {
-    background: none;
   }
 }
 @media (max-width: 390px) {
