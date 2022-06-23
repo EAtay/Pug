@@ -28,11 +28,16 @@
   list-style: none;
   gap: 24px;
 }
-.social__footer-item{
+.social__footer-item,
+.social__footer-item_blue{
   fill: #9FA7B0;
 }
 .social__footer-item:hover{
   transition: 0.2s;
-  fill: green;
+  fill: #47CF34;
+}
+.social__footer-item_blue:hover{
+  transition: 0.2s;
+  fill: #0088cc;
 }
 }
