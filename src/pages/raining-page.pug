@@ -77,6 +77,7 @@ block content
                         p.card-text-side Взаимодействие служб маркетинга и продаж как основа успешной реализации планов. Устранение разрывов в понимании рыночной ситуации. Создание общего информационного поля.
             .col-12.page-five-title
                 h1.title-text Кейсы-примеры:
+                img(src="../img/cubes.png", alt="cubes").cubes-img
                 .col-12.page-items
                     .content__block
                         img(src="../img/icons/service-polygon.png" alt="cube").cube__content
@@ -128,10 +129,11 @@ block content
                     .content__block
                         img(src="../img/icons/service-polygon.png" alt="cube").cube__content
                         p.card-text-side групповой офлайн-формат, продолжительность 2 дня, по 8 часов в день
-            .modal-content
-                form.order    
-                    input#name.input(type="text" name="name", placeholder= "Ваше имя")
-                    label.input__message(for="name")
-                    input#email.input(type="text" name="email", placeholder= "Email")
-                    label.input__message(for="email")
-                    button.sendBtn Получить консультацию
+            .col-10.modal_window
+                .modal-content
+                    form.order    
+                        input#name.input(type="text" name="name", placeholder= "Ваше имя")
+                        label.input__message(for="name")
+                        input#email.input(type="text" name="email", placeholder= "Email")
+                        label.input__message(for="email")
+                        button.sendBtn Получить консультацию

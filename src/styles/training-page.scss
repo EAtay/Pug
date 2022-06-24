@@ -28,11 +28,16 @@
     z-index: 0;
   }
   @media (max-width: 991px) {
+    .bg-polygon {
+      display: none;
+    }
     .cube__img {
       display: none;
     }
+    .cubes-img {
+      display: none;
+    }
   }
-
   .container {
     position: relative;
     padding: 27px 0 94px;
@@ -67,9 +72,8 @@
         .content__block {
           margin-bottom: 8px;
           align-items: center;
-          text-align: center;
+          text-align: left;
           display: flex;
-          flex-wrap: wrap;
           gap: 46px;
           padding: 4px 8px;
         }
@@ -99,7 +103,7 @@
             font-weight: 700;
             font-size: 16px;
             line-height: 20px;
-            text-align: center;
+            text-align: left;
             text-transform: uppercase;
             color: #ffffff;
             img {
@@ -139,9 +143,8 @@
         .content__block {
           margin-bottom: 8px;
           align-items: center;
-          text-align: center;
+          text-align: left;
           display: flex;
-          flex-wrap: wrap;
           gap: 19px;
           padding: 4px 6px;
         }
@@ -176,7 +179,7 @@
         .content__block {
           margin-bottom: 17px;
           align-items: center;
-          text-align: center;
+          text-align: left;
           display: flex;
           gap: 19px;
           flex-wrap: nowrap;
@@ -211,7 +214,7 @@
         .content__block {
           margin-bottom: 17px;
           align-items: center;
-          text-align: center;
+          text-align: left;
           display: flex;
           gap: 19px;
           flex-wrap: nowrap;
@@ -234,6 +237,13 @@
     .page-five-title {
       width: 100%;
       margin-top: 28px;
+      .cubes-img {
+        right: -160px;
+        top: 47%;
+        height: auto;
+        position: absolute;
+        z-index: 0;
+      }
       .title-text {
         font-family: "Montserrat";
         font-weight: 700;
@@ -246,7 +256,7 @@
         .content__block {
           margin-bottom: 17px;
           align-items: center;
-          text-align: center;
+          text-align: left;
           display: flex;
           gap: 19px;
           flex-wrap: nowrap;
@@ -341,7 +351,7 @@
         .content__block {
           margin-bottom: 17px;
           align-items: center;
-          text-align: center;
+          text-align: left;
           display: flex;
           gap: 19px;
           flex-wrap: nowrap;
@@ -376,7 +386,7 @@
         .content__block {
           margin-bottom: 17px;
           align-items: center;
-          text-align: center;
+          text-align: left;
           display: flex;
           gap: 19px;
           flex-wrap: nowrap;
@@ -396,8 +406,10 @@
         }
       }
     }
+    .modal_window {
+      margin: 0 auto;
+    }
     .modal-content {
-      width: 643px;
       margin: auto;
       margin-top: 132px;
       padding: 78px 56px;
@@ -409,10 +421,264 @@
         background: #ffffff;
         border: 1px solid #9fa7b0;
         border-radius: 8px;
-        width: 530px;
+        width: 100%;
       }
       .sendBtn {
-        width: 530px;
+        width: 100%;
+      }
+    }
+    @media (max-width: 878px) {
+      .modal-content {
+        margin-top: 30px;
+        padding: 40px 20px;
+      }
+    }
+  }
+}
+@media (max-width: 991px) {
+  #training-page {
+    padding: 50px 50px;
+    .container {
+      padding-top: 20px;
+      .page-title {
+        .title-text {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .page-context {
+          font-size: 12px;
+          line-height: 14px;
+          margin-bottom: 14px;
+        }
+        .page-text {
+          font-size: 12px;
+          line-height: 12px;
+        }
+      }
+      .page-second-title {
+        margin-top: 76px;
+        .title-text {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .page-context {
+          font-size: 12px;
+          line-height: 14px;
+          padding-top: 10px;
+          margin-bottom: 14px;
+        }
+        .page-text {
+          font-size: 12px;
+          line-height: 12px;
+        }
+        .page-items .card-text-side {
+          font-size: 13px;
+          line-height: 16px;
+        }
+      }
+      .page-third-title {
+        margin-top: 16px;
+        .title-text {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .page-context {
+          font-size: 12px;
+          line-height: 14px;
+          padding-top: 10px;
+          margin-bottom: 14px;
+        }
+        .page-text {
+          font-size: 12px;
+          line-height: 12px;
+        }
+        .page-items {
+            padding: 17px 20px;
+          .card-text-side {
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+      }
+      .page-fourth-title {
+        margin-top: 16px;
+        .title-text {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .page-context {
+          font-size: 12px;
+          line-height: 14px;
+          padding-top: 10px;
+          margin-bottom: 14px;
+        }
+        .page-text {
+          font-size: 12px;
+          line-height: 12px;
+        }
+        .page-items {
+            padding: 17px 20px;
+          .card-text-side {
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+      }
+      .page-five-title {
+        margin-top: 16px;
+        .title-text {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .page-context {
+          font-size: 12px;
+          line-height: 14px;
+          padding-top: 10px;
+          margin-bottom: 14px;
+        }
+        .page-text {
+          font-size: 12px;
+          line-height: 12px;
+        }
+        .page-items {
+            padding: 17px 20px;
+          .card-text-side {
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+      }
+      .page-six-title {
+        margin-top: 16px;
+        .title-text {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .page-context {
+          font-size: 12px;
+          line-height: 14px;
+          padding-top: 10px;
+          margin-bottom: 14px;
+        }
+        .page-text {
+          font-size: 12px;
+          line-height: 12px;
+        }
+        .page-items {
+            padding: 17px 20px;
+          .card-text-side {
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+      }
+      .page-seven-title {
+        margin-top: 16px;
+        .title-text {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .page-context {
+          font-size: 12px;
+          line-height: 14px;
+          padding-top: 10px;
+          margin-bottom: 14px;
+        }
+        .page-text {
+          font-size: 12px;
+          line-height: 12px;
+        }
+        .page-items {
+            padding: 17px 20px;
+          .card-text-side {
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+      }
+      .page-eight-title {
+        margin-top: 16px;
+        .title-text {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .page-context {
+          font-size: 12px;
+          line-height: 14px;
+          padding-top: 10px;
+          margin-bottom: 14px;
+        }
+        .page-text {
+          font-size: 12px;
+          line-height: 12px;
+        }
+        .page-items {
+            padding: 17px 20px;
+          .card-text-side {
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+      }
+      .page-nine-title {
+        margin-top: 16px;
+        .title-text {
+          font-size: 20px;
+          line-height: 24px;
+        }
+        .page-context {
+          font-size: 12px;
+          line-height: 14px;
+          padding-top: 10px;
+          margin-bottom: 14px;
+        }
+        .page-text {
+          font-size: 12px;
+          line-height: 12px;
+        }
+        .page-items {
+            padding: 17px 20px;
+          .card-text-side {
+            font-size: 13px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 591px) {
+  #training-page {
+    padding: 50px 50px;
+    .breadcrumb .breadcrumb-item {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 14px;
+    }
+    .container .page-title .page-items .card__btn {
+      margin: 44px 0 0 8px;
+      padding: 0 40px;
+      background: #30b01e;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      a {
+        font-size: 11px;
+        img {
+          margin-left: 10px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 420) {
+  #training-page {
+    .container .page-title .page-items .card__btn {
+      background: #30b01e;
+      border-radius: 8px;
+      a img {
+        margin-left: 0px;
       }
     }
   }

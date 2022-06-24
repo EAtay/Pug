@@ -27,9 +27,12 @@
     position: absolute;
     z-index: 0;
   }
-  @media (max-width:991px) {
-    .cube__img{
-        display: none;
+  @media (max-width: 991px) {
+    .bg-polygon {
+      display: none;
+    }
+    .cube__img {
+      display: none;
     }
   }
   .container {
@@ -73,7 +76,6 @@
         }
         .card__btn {
           height: 48px;
-          width: 229px;
           align-items: center;
           justify-content: center;
           text-align: center;
@@ -95,9 +97,9 @@
             color: #ffffff;
           }
         }
-        .card__btn:hover{
-            transition: .2s;
-            background: #4B9AFB;
+        .card__btn:hover {
+          transition: 0.2s;
+          background: #4b9afb;
         }
       }
       .card__right__side {
@@ -144,3 +146,36 @@
     }
   }
 }
+@media (max-width: 991px) {
+  #service {
+    padding: 50px 50px;
+    .container {
+      padding-top: 20px;
+    }
+  }
+}
+@media (max-width: 591px) {
+  #service {
+    padding: 50px 50px;
+    .breadcrumb .breadcrumb-item {
+      margin-bottom: 20px;
+      font-size: 16px;
+      line-height: 14px;
+    }
+    .container .trening_card {
+      padding: 2px 18px;
+      background: #fff;
+      box-shadow: 4px 4px 20px rgb(40 44 55 / 20%);
+      border-radius: 20px;
+      display: flex;
+      margin-bottom: 40px;
+    }
+    .container .trening_card:nth-child(2) {
+      padding: 2px 18px;
+    }
+    .container .trening_card:nth-child(3) {
+      padding: 2px 18px;
+    }
+  }
+}
+
