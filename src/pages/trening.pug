@@ -1,4 +1,70 @@
 extends ../index.pug
-
-block content 
-    h1 Тренинг
+block content
+    section#service
+        nav(aria-label='breadcrumb').breadcrumbs
+            ol.breadcrumb
+                li.breadcrumb-item
+                    a(href='/') Главная
+                li.breadcrumb-item.active(aria-current='page') Тренинги
+                img(src="../img/Polygon-crumbs.svg" alt="polygon").bg-polygon
+        
+        .cube__img
+            img(src="../img/pages-bg.png", alt="cube").img-fluid
+        .container
+            .col-12.trening_card
+                .col-6.card__content
+                    h2.card__title Бизнес-тренинг «Маркетинг – технология роста»
+                    p.card__context Для кого: руководители компаний, маркетологи, продавцы
+                    p.card__text Цели бизнес-тренинга:
+                    button.card__btn
+                        a(href="training-page.html") подробнее 
+                            img(src="../img/icons/next-btn.png", alt="next-btn")
+                .col-6.card__right__side
+                    .content__block
+                        img(src="../img/icons/card-cube.png" alt="cube").cube__content
+                        p.card-text-side Определение маркетинга как технологии роста
+                    .content__block
+                        img(src="../img/icons/card-cube.png" alt="cube").cube__content
+                        p.card-text-side Организация маркетинга как сквозного бизнес-процесса
+                    .content__block
+                        img(src="../img/icons/card-cube.png" alt="cube").cube__content
+                        p.card-text-side Получение практических навыков применения технологии маркетинга
+            .col-12.trening_card
+                .col-6.card__content
+                    h2.card__title Тренинг с длинным названием в 3 текстовой строчки
+                    p.card__context Для кого: руководители компаний, маркетологи, продавцы
+                    p.card__text Цели бизнес-тренинга:
+                    button.card__btn
+                        a(href="training-page.html") подробнее 
+                            img(src="../img/icons/next-btn.png", alt="next-btn")
+                .col-6.card__right__side
+                    .content__block
+                        img(src="../img/icons/card-cube.png" alt="cube").cube__content
+                        p.card-text-side Определение маркетинга как технологии роста
+                    .content__block
+                        img(src="../img/icons/card-cube.png" alt="cube").cube__content
+                        p.card-text-side Организация маркетинга как сквозного бизнес-процесса
+                    .content__block
+                        img(src="../img/icons/card-cube.png" alt="cube").cube__content
+                        p.card-text-side Получение практических навыков применения технологии маркетинга
+                    .content__block
+                        img(src="../img/icons/card-cube.png" alt="cube").cube__content
+                        p.card-text-side Получение практических навыков применения технологии маркетинга
+            .col-12.trening_card
+                .col-6.card__content
+                    h2.card__title Короткое название
+                    p.card__context Для кого: руководители компаний, маркетологи, продавцы
+                    p.card__text Цели бизнес-тренинга:
+                    button.card__btn
+                        a(href="training-page.html") подробнее 
+                            img(src="../img/icons/next-btn.png", alt="next-btn")
+                .col-6.card__right__side
+                    .content__block
+                        img(src="../img/icons/card-cube.png" alt="cube").cube__content
+                        p.card-text-side Определение маркетинга как технологии роста
+                    .content__block
+                        img(src="../img/icons/card-cube.png" alt="cube").cube__content
+                        p.card-text-side Организация маркетинга как сквозного бизнес-процесса
+                    .content__block
+                        img(src="../img/icons/card-cube.png" alt="cube").cube__content
+                        p.card-text-side Получение практических навыков применения технологии маркетинга

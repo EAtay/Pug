@@ -1,0 +1,146 @@
+#service {
+  padding: 71px 164px 22px;
+  background: #e5e5e5;
+  .breadcrumb {
+    .breadcrumb-item {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 16px;
+      color: #282c37;
+      position: relative;
+      a {
+        color: #9fa7b0;
+      }
+    }
+    .bg-polygon {
+      position: absolute;
+      z-index: 0;
+      margin-top: 28px;
+      left: 140px;
+    }
+  }
+  .cube__img {
+    right: 0;
+    top: 20%;
+    width: 50%;
+    height: auto;
+    position: absolute;
+    z-index: 0;
+  }
+  @media (max-width:991px) {
+    .cube__img{
+        display: none;
+    }
+  }
+  .container {
+    position: relative;
+    padding: 35px 0;
+    .trening_card {
+      padding: 41px 76px 39px 38px;
+      background: #fff;
+      box-shadow: 4px 4px 20px rgba(40, 44, 55, 0.2);
+      border-radius: 20px;
+      display: flex;
+      margin-bottom: 40px;
+      flex-wrap: wrap;
+      .card__content {
+        .card__title {
+          font-family: "Montserrat";
+          font-weight: 700;
+          margin-bottom: 0;
+          font-size: 30px;
+          line-height: 37px;
+          color: #282c37;
+          padding-bottom: 30px;
+        }
+        .card__context {
+          padding-bottom: 4px;
+          margin-bottom: 0;
+          font-family: "Lato";
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: #282c37;
+        }
+        .card__text {
+          margin-bottom: 0;
+          padding-bottom: 32px;
+          font-family: "Lato";
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 22px;
+          color: #282c37;
+        }
+        .card__btn {
+          height: 48px;
+          width: 229px;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          display: flex;
+          padding: 0 23px;
+          border-radius: 8px;
+          background: #287ee7;
+          a {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            font-family: "Montserrat";
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: center;
+            text-transform: uppercase;
+            color: #ffffff;
+          }
+        }
+        .card__btn:hover{
+            transition: .2s;
+            background: #4B9AFB;
+        }
+      }
+      .card__right__side {
+        padding: 15px 28px;
+        .content__block {
+          display: flex;
+          flex-direction: wrap;
+          gap: 41px;
+          .cube__content {
+            height: 25px;
+          }
+          .card-text-side {
+            font-family: "Lato";
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 20px;
+            color: #282c37;
+          }
+        }
+      }
+    }
+    .trening_card:nth-child(2) {
+      padding: 38px 76px 39px 38px;
+      .card__content {
+        .card__title {
+          width: 90%;
+          padding-bottom: 24px;
+        }
+        .card__context {
+          padding-bottom: 6px;
+        }
+      }
+    }
+    .trening_card:nth-child(3) {
+      padding: 38px 76px 39px 38px;
+      .card__content {
+        .card__title {
+          padding-bottom: 26px;
+        }
+        .card__context {
+          padding-bottom: 5px;
+        }
+      }
+    }
+  }
+}

@@ -51,6 +51,10 @@ module.exports = {
       template: "./src/pages/trening.pug",
     }),
     new HTMLWebpackPlugin({
+      filename: "training-page.html",
+      template: "./src/pages/raining-page.pug",
+    }),
+    new HTMLWebpackPlugin({
       filename: "service.html",
       template: "./src/pages/service.pug",
     }),

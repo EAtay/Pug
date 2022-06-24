@@ -1,0 +1,6 @@
+mixin breadcrumbs(list)
+    .breadCrumbs
+        ul.breadCrumb__list
+            img(src="../img/Polygon-crumbs.svg", alt="bg-polygon").breadcrumbs__img
+            for i in list
+                li.breadcrumb__item= i

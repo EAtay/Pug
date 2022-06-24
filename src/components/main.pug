@@ -1,5 +1,4 @@
 extends ../index.pug
-
 block content
     main#main
         .container
@@ -91,22 +90,35 @@ block content
             .container
                 .services__title.w-100
                     h1.services__title-text Услуги
-                    img(src="../img/service-polygon.png", alt="polygon").services__title-img-poly
-                    img(src="../img/bottom-line.png", alt="arrow").services__title-img-arrow
+                    img(src="../img/service-polygon.png" alt="polygon").services__title-img-poly
+                    img(src="../img/bottom-line.png" alt="arrow").services__title-img-arrow
                 .row.services__items
                     .col-sl-12.col-md-6.col-lg-4
                         a(href="./service.html").services__item.services__img-report_height
-                            img(src="../img/icons/report.svg", alt="report").services__item-img
+                            img(src="../img/icons/report.svg" alt="report").services__item-img
                             p.services__item-text Разрабатываем маркетинг-план: дорожная карта достижения целей 
                     .col-sl-12.col-md-6.col-lg-8
                         a(href="./service.html").services__item.services__img-idea_height.services__img-idea_justify
-                            img(src="../img/icons/idea.svg", alt="idea").services__item-img
+                            img(src="../img/icons/idea.svg" alt="idea").services__item-img
                             p.services__item-text Повышаем эффективность продвижения: аудит существующей модели
                     .col-sl-12.col-md-6.col-lg-4.item_up
                         a(href="./service.html").services__item.services__img-search_height
-                            img(src="../img/icons/search.svg", alt="search").services__item-img
+                            img(src="../img/icons/search.svg" alt="search").services__item-img
                             p.services__item-text Находим скрытую прибыль: анализ модели ценообразования 
                     .col-sl-12.col-md-6.col-lg-4.item_up
                         a(href="./service.html").services__item.services__img-startup_height
-                            img(src="../img/icons/startup.svg", alt="startup").services__item-img.services__item-img_startup
+                            img(src="../img/icons/startup.svg" alt="startup").services__item-img.services__item-img_startup
                             p.services__item-text Запускаем новый проект: start-up маркетинг
+        .modal
+            .modal-content
+                form.order    
+                    h2.form__title Оставьте заявку
+                    input#name.input(type="text" name="name", placeholder= "Ваше имя")
+                    label.input__message(for="name")
+                    input#email.input(type="text" name="email", placeholder= "Email")
+                    label.input__message(for="email")
+                    textarea#message.input.input_multy(type = "text" name="message", placeholder = "Пожалуйста опишите вашу проблему")
+                    label.input__message(for='message')
+                    button.sendBtn отправить
+                    p.order__success 
+            img(src="../img/icons/close.svg" alt="close__modal").modal__btn-close

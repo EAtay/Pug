@@ -1,21 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&display=swap');
-@import './styles/header.scss';
-@import './styles//footer.scss';
-@import './styles/faq-section.scss';
-@import './styles/service-section.scss';
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@700&family=Roboto&display=swap");
+@import "./styles/header.scss";
+@import "./styles//footer.scss";
+@import "./styles/faq-section.scss";
+@import "./styles/service-section.scss";
+@import "./styles/modal.scss";
+@import "./styles/trening.scss";
+@import "./styles/training-page.scss";
 @import url(./styles/font-lato.scss);
 @import url(./styles/main.scss);
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    border: none;
-    scroll-behavior: smooth;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  scroll-behavior: smooth;
 }
-a{
-    text-decoration: none;
+a {
+  text-decoration: none;
 }
-.container{
-    align-items: center;
-    justify-content: center;
+.container {
+  align-items: center;
+  justify-content: center;
 }
