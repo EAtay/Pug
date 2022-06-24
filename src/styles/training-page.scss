@@ -35,7 +35,7 @@
 
   .container {
     position: relative;
-    padding: 27px 0;
+    padding: 27px 0 94px;
     .page-title {
       width: 90%;
       .title-text {
@@ -397,8 +397,9 @@
       }
     }
     .modal-content {
-        width: 643px;
-        margin: auto;
+      width: 643px;
+      margin: auto;
+      margin-top: 132px;
       padding: 78px 56px;
       border-radius: 20px;
       background: #ffffff;
