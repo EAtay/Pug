@@ -63,15 +63,14 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "styles.css",
     }),
-    new webpack.HotModuleReplacementPlugin(),
-
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: "./src/img",
-          to: "./img",
+          from: path.resolve(__dirname, "./src/img"),
+          to: path.resolve(__dirname, "./img"),
         },
       ],
     }),
+    new webpack.HotModuleReplacementPlugin(),
   ],
 };
