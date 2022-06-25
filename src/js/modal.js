@@ -48,7 +48,7 @@ const addFocusListener = () => {
 };
 const cleanForm = () => {
   const links = getInputs();
-  const submitBtn = document.querySelector(".order__btn_width");
+  const submitBtn = document.querySelector(".sendBtn");
   submitBtn.classList.remove("order__btn_send");
   submitBtn.textContent = "отправить";
   document.querySelector(".order__success").textContent = "";
@@ -60,14 +60,16 @@ const cleanForm = () => {
 };
 const handleSubmit = (e) => {
   e.preventDefault();
-  const submitBtn = document.querySelector(".order__btn_width");
+  const submitBtn = document.querySelector(".sendBtn");
   submitBtn.classList.add("order__btn_send");
+  submitBtn.style.background = "#9fa7b0";
   submitBtn.textContent = "идет отправка...";
   setTimeout(function () {
     if (checkFormValid()) {
       document.querySelector(".order__success").textContent =
         "Ваша заявка успешно отправлена!";
     } else {
+      submitBtn.style.background = "#47cf34";
       submitBtn.classList.remove("order__btn_send");
       submitBtn.textContent = "отправить";
     }
@@ -75,12 +77,14 @@ const handleSubmit = (e) => {
 };
 
 export const modalInit = () => {
+  const submitBtn = document.querySelector(".sendBtn");
   form?.addEventListener("submit", (e) => handleSubmit(e));
   modalOpenBtn?.addEventListener("click", () => showHideToggle("modal"));
   modalClodeBtn?.addEventListener("click", () => {
     showHideToggle("modal");
     document.body.style.overflow = "auto";
     cleanForm();
+    submitBtn.style.background = "#47cf34";
   });
   addFocusListener();
 };
