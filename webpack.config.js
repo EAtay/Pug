@@ -71,6 +71,14 @@ module.exports = {
         },
       ],
     }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "./src/asset",
+          to: "./img",
+        },
+      ],
+    }),
     new webpack.HotModuleReplacementPlugin(),
   ],
 };
