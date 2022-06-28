@@ -71,6 +71,19 @@
     }
   }
 }
+@media (max-width: 992px) {
+  .services__img-report_height {
+    gap: 16px;
+  }
+  .services__img-idea_height {
+    gap: 16px;
+  }
+  .services__img-search_height {
+    gap: 16px;
+  }
+  .services__img-startup_height {
+  } 
+}
 @media (min-width: 992px) {
   .services__img-report_height {
     height: 507px;
@@ -83,7 +96,7 @@
   }
   .services__img-startup_height {
     height: 328px;
-  }
+  } 
   .services__items {
     display: flex;
     justify-content: flex-end;

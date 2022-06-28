@@ -1,6 +1,6 @@
 #training-page {
   padding: 71px 164px 22px;
-  background: #e5e5e5;
+  background: #fff;
   .breadcrumb {
     .breadcrumb-item {
       font-weight: 400;
@@ -440,18 +440,19 @@
     padding: 50px 50px;
     .container {
       padding-top: 20px;
+      text-align: left;
       .page-title {
         .title-text {
-          font-size: 20px;
-          line-height: 24px;
+          font-size: 30px;
+          line-height: 28px;
         }
         .page-context {
-          font-size: 12px;
+          font-size: 16px;
           line-height: 14px;
           margin-bottom: 14px;
         }
         .page-text {
-          font-size: 12px;
+          font-size: 14px;
           line-height: 12px;
         }
       }
@@ -657,7 +658,7 @@
     }
     .container .page-title .page-items .card__btn {
       margin: 44px 0 0 8px;
-      padding: 0 40px;
+      padding: 0 20px;
       background: #30b01e;
       border-radius: 8px;
       display: flex;
