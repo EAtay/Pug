@@ -156,11 +156,9 @@
 }
 @media (max-width: 591px) {
   #service {
-    padding: 50px 50px;
+    padding: 0 15px;
     .breadcrumb .breadcrumb-item {
-      margin-bottom: 20px;
-      font-size: 16px;
-      line-height: 14px;
+      display: none;
     }
     .container .trening_card {
       padding: 2px 18px;
@@ -169,6 +167,41 @@
       border-radius: 20px;
       display: flex;
       margin-bottom: 40px;
+      .card__content .card__title {
+        font-size: 28px;
+        line-height: 30px;
+    }
+      .card__right__side {
+        padding: 15px 0px !important;
+        .content__block {
+          display: flex;
+          flex-direction: wrap;
+          gap: 25px;
+          .cube__content {
+            height: 25px;
+          }
+          .card-text-side {
+            font-family: "Lato";
+            font-weight: 400;
+            font-size: 17px;
+            line-height: 20px;
+            color: #282c37;
+          }
+        }
+      }
+      .card__btn {
+        height: 48px;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        display: flex;
+        padding: 0 23px;
+        border-radius: 8px;
+        background: #287ee7;
+        img{
+          margin-left: 20px!important;
+        }
+      }
     }
     .container .trening_card:nth-child(2) {
       padding: 2px 18px;
@@ -176,6 +209,8 @@
     .container .trening_card:nth-child(3) {
       padding: 2px 18px;
     }
+    .card__right__side {
+      padding: 15px 0;}
   }
 }
 

@@ -3,41 +3,92 @@
   height: 70px;
   background: #3f4750;
 
-.footer__container {
-  padding: 20px 11px;
-  display: flex;
-  text-align: center;
-  align-items: center;
+  .footer__container {
+    padding: 20px 11px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .roots-footer {
+    text-align: left;
+  }
+  .footer__title {
+    margin: 0;
+    font-family: "Lato";
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.03em;
+    color: #9fa7b0;
+  }
+  .social-footer {
+    display: flex;
+    margin: 0;
+    justify-content: end;
+    list-style: none;
+    gap: 24px;
+  }
+  .social__footer-item,
+  .social__footer-item_blue {
+    fill: #9fa7b0;
+  }
+  .social__footer-item:hover {
+    transition: 0.2s;
+    fill: #47cf34;
+  }
+  .social__footer-item_blue:hover {
+    transition: 0.2s;
+    fill: #0088cc;
+  }
 }
-.roots-footer {
-  text-align: left;
-}
-.footer__title {
-  margin: 0;
-  font-family: "Lato";
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 17px;
-  letter-spacing: 0.03em;
-  color: #9fa7b0;
-}
-.social-footer {
-  display: flex;
-  margin: 0;
-  justify-content: end;
-  list-style: none;
-  gap: 24px;
-}
-.social__footer-item,
-.social__footer-item_blue{
-  fill: #9FA7B0;
-}
-.social__footer-item:hover{
-  transition: 0.2s;
-  fill: #47CF34;
-}
-.social__footer-item_blue:hover{
-  transition: 0.2s;
-  fill: #0088cc;
-}
+@media (max-width: 500px) {
+  #footer {
+    width: 100%;
+    height: auto;
+    background: #3f4750;
+    ol,
+    ul {
+      padding-left: 0;
+    }
+    .footer__container {
+      padding: 30px 11px;
+      display: flex;
+      flex-direction: column-reverse;
+      gap: 22px;
+      text-align: center;
+      align-items: center;
+    }
+    .roots-footer {
+      text-align: left;
+    }
+    .footer__title {
+      margin: 0;
+      font-family: "Lato";
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 17px;
+      letter-spacing: 0.03em;
+      color: #9fa7b0;
+    }
+    .social-footer {
+      display: flex;
+      margin: 0;
+      justify-content: end;
+      list-style: none;
+      gap: 24px;
+    }
+    .social__footer-item,
+    .social__footer-item_blue {
+      fill: #9fa7b0;
+    }
+    .social__footer-item:hover {
+      transition: 0.2s;
+      fill: #47cf34;
+    }
+    .social__footer-item_blue:hover {
+      transition: 0.2s;
+      fill: #0088cc;
+    }
+  }
 }
